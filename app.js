@@ -3,7 +3,7 @@ const addButton = document.querySelector("#addButton");
 const list = document.querySelector("#toDoList");
 let todos = [];
 
-// Function to render todo list
+
 function renderTodos() {
     list.innerHTML = "";
     for (let index = 0; index < todos.length; index++) {
@@ -26,7 +26,7 @@ function renderTodos() {
     }
 }
 
-// Function to add todo
+
 function addTodo() {
     const todoText = input.value.trim();
     if (todoText) {
@@ -38,13 +38,11 @@ function addTodo() {
 
 addButton.addEventListener("click", addTodo);
 
-// Function to delete todo
 function deleteTodo(index) {
     todos.splice(index, 1);
     renderTodos();
 }
 
-// Function to edit todo text
 function editTodoText(index) {
     const newText = prompt("Enter new todo text:");
     if (newText !== null) {
@@ -53,12 +51,10 @@ function editTodoText(index) {
     }
 }
 
-// Function to handle keypress
 function handleKeyPress(event) {
     if (event.key === "Enter") {
         addTodo();
     }
 }
 
-// Event listener for Enter key press
 input.addEventListener("keypress", handleKeyPress);

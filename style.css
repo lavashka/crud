@@ -6,7 +6,7 @@
     border-radius: 8px;
   }
   
-  /* Styles for the input field */
+
   #toDoInput {
     width: 70%;
     padding: 8px;
@@ -15,7 +15,7 @@
     border-radius: 4px;
   }
   
-  /* Styles for the Add button */
+
   #addButton {
     padding: 8px 15px;
     font-size: 16px;
@@ -31,14 +31,13 @@
   #addButton:hover {
     background-color: #45a049;
   }
-  
-  /* Styles for the todo list */
+
   #toDoList {
     list-style-type: none;
     padding: 0;
   }
   
-  /* Styles for todo list items */
+
   #toDoList li {
     margin-top: 10px;
     padding: 10px;
@@ -47,7 +46,7 @@
     position: relative;
   }
   
-  /* Styles for delete button */
+
   .delete {
     position: absolute;
     top: 5px;
@@ -66,7 +65,7 @@
     background-color: #d32f2f;
   }
   
-  /* Styles for edit button */
+
   .edit {
     position: absolute;
     top: 5px;
